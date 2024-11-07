@@ -1,9 +1,7 @@
 INDEX.HTML-->
 
 <!DOCTYPE html>
-<!-- Declares the document type and version of HTML, ensuring that the browser renders the page correctly. -->
 <html lang="en">
-<!-- Sets the character encoding for the document to UTF-8, which supports a wide range of characters and symbols. -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +11,7 @@ INDEX.HTML-->
 </head>
 <!-- The <body> tag contains all the visible content of the webpage, structured into various sections. -->
 <body>
-  <!-- <header>: Represents the introductory content or a set of navigational links. Typically contains the logo and main navigation. -->
+  <!-- <header> Represents the introductory content or a set of navigational links. Typically contains the logo and main navigation. -->
     <header>
       
       <div class="logo">
@@ -26,14 +24,14 @@ INDEX.HTML-->
         <a href="#">Our Story</a>
       </nav>
     </header>
-    <!-- <div class="container">: Acts as a wrapper for the main content, providing structure and enabling centralized styling. -->
+    <!-- <div class="container"> Acts as a wrapper for the main content, providing structure and enabling centralized styling. -->
     <div class="container">
     
     <section class="main-title">
       <h1>Erased Tapes:</h1>
       <h2>Exploring the Sonic Frontier</h2>
     </section>
-    <!-- <div class="multi-para">: A container that likely groups multiple paragraphs or content sections together, possibly for styling or layout purposes. -->
+    <!-- <div class="multi-para"> A container that likely groups multiple paragraphs or content sections together, possibly for styling or layout purposes. -->
     <div class="multi-para">
     <section class="content-section">
       <h2>Heading</h2>
@@ -42,7 +40,7 @@ INDEX.HTML-->
       <p>Curae habitasse elementum amet nunc, natoque at. Tortor vel blandit sociosqu auctor aliquam maximus porta feugiat. Eros phasellus platea mauris condimentum natoque hendrerit tellus id. Ex imperdiet vitae maximus adipiscing neque quam tempor orci. Lobortis porta lacinia cubilia tellus vel placerat; facilisis mi euismod. Neque eu orci nulla penatibus elit nec.</p>
       <p>Parturient habitasse facilisis purus donec, enim platea maximus. Primis class varius augue sed class ultricies. Posuere curabitur tristique penatibus montes hac ac imperdiet. Risus per sociosqu, cursus leo condimentum ac fringilla. Nibh curabitur eros tempus nec; nam curae hendrerit. Mattis placerat maximus mollis praesent, eros adipiscing dui.   </p>
     </section>
-    <!-- <section class="content-section">: A semantic container for a distinct part of the content, such as an article or a topic section. -->
+    <!-- <section class="content-section"> A semantic container for a distinct part of the content, such as an article or a topic section. -->
     <section class="content-section">
       <h2>Heading</h2>
       <p>Habitasse ornare fames facilisis montes pulvinar habitasse fringilla. Risus porta cursus duis vivamus quam adipiscing nec. Ante at posuere eget aptent natoque vivamus ante. Aenean enim dapibus viverra sem efficitur. Felis nam semper integer justo in. Facilisi augue urna torquent lacinia facilisi inceptos. Natoque varius feugiat massa scelerisque natoque, cras tempor inceptos.   </p>
@@ -56,7 +54,7 @@ INDEX.HTML-->
       <p>Ad venenatis sapien habitant posuere donec porttitor vel nisi. Sodales laoreet donec diam rhoncus lectus euismod orci torquent curae. Fames rhoncus torquent sed convallis; potenti cras. Dictumst arcu libero nulla malesuada mi ridiculus platea. Interdum ullamcorper fringilla himenaeos mollis; in arcu pharetra massa. Nunc mauris taciti montes sapien molestie orci ac quis.</p>
     </section>
   </div>
-  <!-- <section class="album-grid">: A semantic container for displaying a grid of album covers. -->
+  <!-- <section class="album-grid"> A semantic container for displaying a grid of album covers. -->
     <section class="album-grid">
       <!-- Each album is wrapped in a <div class="album-cover cover-x">, where cover-x likely represents specific styling or background images for each album. -->
         <div class="album-cover cover-1">
@@ -76,9 +74,9 @@ INDEX.HTML-->
             <img src="the-cell.jpg" alt="album-cover">
         </div>
     </section>
-    <!-- <section class="author-section">: A semantic container dedicated to information about the author. -->
+    <!-- <section class="author-section"> A semantic container dedicated to information about the author. -->
     <section class="author-section">
-      <!-- <h3>The Author</h3>: A subheading introducing the author section. -->
+      <!-- <h3>The Author</h3> A subheading introducing the author section. -->
       <h3>The Author</h3>
       <!-- <p>: A paragraph providing a brief description or biography of the author. -->
       <p>Sapien leo scelerisque per convallis torquent nunc. Lobortis eleifend a nam sit turpis nostra. Tempus suspendisse libero curae faucibus lobortis litora bibendum praesent! Eget quam magna, diam commodo interdum sapien magnis. </p>
@@ -86,7 +84,7 @@ INDEX.HTML-->
         <img src="profile_picture.jpg" alt="author-profile">
       </div>
     </section>
-    <!-- <footer class="footer">: A semantic container for the footer content, typically containing legal information, links, or contact details. -->
+    <!-- <footer class="footer"> A semantic container for the footer content, typically containing legal information, links, or contact details. -->
       <!-- Displays a copyright notice. -->
     <footer class="footer">
         Copyright © 2023 Erased Disks Ltd.
@@ -112,7 +110,7 @@ STYLE.CSS-->
     background-color: #e0e0e0;
     font-family: 'Josefin Sans';
   }
-  /* .container: Sets a max-width of 900px for the main content area, with padding, centered horizontally. This keeps the content well-centered on larger screens. */
+  /* Sets a max-width of 900px for the main content area, with padding, centered horizontally. This keeps the content well-centered on larger screens. */
   .container {
     width: 100%;
     max-width: 900px;
@@ -125,7 +123,7 @@ STYLE.CSS-->
     text-align: center;
     padding: 20px 0;
   }
-  /* Logo: A circle container for the logo image, sized at 60x60px, with the image set to max-width to fill the container. */
+  /* A circle container for the logo image, sized at 60x60px, with the image set to max-width to fill the container. */
   .logo {
     width: 60px;
     height: 60px;
@@ -136,7 +134,7 @@ STYLE.CSS-->
   .logo img {
     max-width: 100%;
   }
-  /* Nav Links: Uses display: flex to space out the links evenly, making them bold and black. */
+  /* Uses display: flex to space out the links evenly, making them bold and black. */
   nav {
     display: flex;
     justify-content: space-around;
@@ -161,12 +159,12 @@ STYLE.CSS-->
     font-weight: bold;
     font-family: 'Protest Guerrilla';
   }
-  /* .multi-para: Uses column-count: 3 to split the content into three columns on larger screens. */
+  /* Uses column-count: 3 to split the content into three columns on larger screens. */
   .multi-para{
     column-count: 3;
 
   }
-  /* .content-section: Has a bold subheading (h2 at 30px) and sets a background color for the paragraphs. Margins are set to space out paragraphs. */
+  /* Has a bold subheading (h2 at 30px) and sets a background color for the paragraphs. Margins are set to space out paragraphs. */
   .content-section {
     margin-bottom: 30px;
   }
@@ -181,7 +179,7 @@ STYLE.CSS-->
     width: 100%;
     max-width: 90%;
   }
-  /* .album-grid: Defines a 4-column grid with areas named cover-1, cover-2, cover-3, cover-4, and cover-5 using grid-template-areas for complex positioning. The images are set to fill the grid cells with max-width: 100%. */
+  /* Defines a 4-column grid with areas named cover-1, cover-2, cover-3, cover-4, and cover-5 using grid-template-areas for complex positioning. The images are set to fill the grid cells with max-width: 100%. */
   .album-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -214,7 +212,7 @@ STYLE.CSS-->
   .cover-5 {
     grid-area: cover-5;
   }
-  /* .author-section: Center-aligned with padding and a top border. Contains an author profile with a circular image. */
+  /* Center-aligned with padding and a top border. Contains an author profile with a circular image. */
   .author-section {
     text-align: center;
     padding: 20px 0;
@@ -231,7 +229,7 @@ STYLE.CSS-->
     max-width: 100%;
     border-radius: 50%;
   }
-  /* Footer: Center-aligned, smaller text, with some margin on top. */
+  /* Center-aligned, smaller text, with some margin on top. */
   .footer {
     text-align: center;
     margin-top: 20px;
