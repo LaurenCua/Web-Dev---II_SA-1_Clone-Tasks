@@ -1,1 +1,289 @@
+INDEX.HTML
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>watch.it</title>
+</head>
+<body>
+    <header>
+        <!-- Title <h1>watch.it</h1>: The main heading gives a brand-like feel to the website. -->
+        <h1>watch.it</h1>
+        <!-- Navigation Links <nav> Each link <a> is categorized by movie genres—Action, Comedy, Romance, Drama allowing users to explore content by genre. -->
+        <nav>
+            <a href="#">Action</a>
+            <a href="#">Comedy</a>
+            <a href="#">Romance</a>
+            <a href="#">Drama</a>
+        </nav>
+        <!-- Search Input: The search bar allows users to look up movies on the site. It has a placeholder text "SEARCH." -->
+        <input type="text" class="search" placeholder="SEARCH">
+    </header>
+    
+    <main>
+        <!-- .movie-container: Contains all movie items and banners. -->
+    <section class="movie-container">
+        <!-- Primary Banner ".main-banner cover-1" highlights "Who Framed Roger Rabbit" as the featured movie. -->
+    <div class="main-banner cover-1">
+        <!-- Image <img src="who-framed-roger-rabbit.jpg" alt="Who Framed Roger Rabbit (1988)">: Displays the main movie image with alt text. -->
+        <img src="who-framed-roger-rabbit.jpg" alt="Who Framed Roger Rabbit (1988)">
+        <!-- Description <div class="description">: A brief plot summary about the movie. -->
+        <div class="description">
+            <p>In a world where cartoons and humans coexist, a detective must solve a zany, high-stakes mystery. Packed with wild humor, groundbreaking animation, and noir twists, this unique film will pull you into a world where anything is possible!</p>
+        </div>
+        <!-- Button <button class="watch-now">WATCH NOW</button>: Calls the user to watch the highlighted movie. -->
+        <button class="watch-now">WATCH NOW</button>
+    </div>
+    
+    <div class="movie-item cover-2">
+        <img src="hook.jpg" alt="Hook (1991)">
+        <div class="details">
+            <p>Rediscover Neverland in this thrilling twist on Peter Pan! Robin Williams stars as a grown-up Peter, who must rediscover his inner child to rescue his kids from the clutches of Captain Hook. Adventure, magic, and nostalgia blend in this timeless family classic.</p>
+            <button class="watch-now">WATCH NOW</button>
+        </div>
+    </div>
+
+    <div class="movie-item cover-3">
+        <img src="la-la-land.jpg" alt="La La Land (2016)">
+        <div class="details">
+            <p>Love, dreams, and the magic of LA take center stage in this musical masterpiece. Watch as two starry-eyed artists navigate passion and ambition in a world where every moment feels like a cinematic spectacle!</p>
+            <button class="watch-now">WATCH NOW</button>
+        </div>
+    </div>
+
+    <div class="movie-item cover-4">
+        <img src="hidden-figures.jpg" alt="Hidden Figures (2016)">
+        <div class="details">
+            <p>Three unsung heroes of NASA's space race take the spotlight in this inspiring true story. Battling discrimination and defying the odds, these brilliant African-American women prove that intelligence, perseverance, and unity can change history and break barriers.</p>
+            <button class="watch-now">WATCH NOW</button>
+        </div>
+    </div>
+
+    <div class="movie-item cover-5">
+        <img src="palm-springs.jpg" alt="Palm Springs (2020)">
+        <div class="details">
+            <p>A never-ending wedding day turns into an unforgettable time-loop romance! Stuck in the same day, two strangers find love, chaos, and meaning in the most unexpected ways.</p>
+            <button class="watch-now">WATCH NOW</button>
+        </div>
+    </div>
+
+    <div class="movie-item cover-6">
+        <img src="barbie.jpg" alt="Barbie (2023)">
+        <div class="details">
+            <p>Step into the dazzling world of Barbie as she embarks on an unexpected journey from her perfect doll life to the real world. Filled with humor, heart, and empowering messages, this vibrant adventure redefines what it means to dream big!</p>
+            <button class="watch-now">WATCH NOW</button>
+        </div>
+    </div>
+    </section>
+
+</main>
+</body>
+</html>
+
+STYLE.CSS
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  /* Sets background-color to #231651, a deep purple shade. */
+  background-color: #231651;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Padding: padding-top: 60px creates space at the top to account for the fixed header. */
+  padding-top: 60px;
+}
+
+header {
+  /* display: flex organizes content in a horizontal line. */
+  display: flex;
+  /* position: fixed makes the header stay at the top while scrolling. */
+  position: fixed;
+  width: 100%;
+  /* top: 15px and z-index: 999 keep the header visible above other content. */
+  top: 15px;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #070410;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+main {
+  max-width: 900px;
+  margin: 48px auto;
+}
+
+header h1 {
+  font-style: 'Teko', serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+/* Styled with padding, border, and rounded corners for easy usability and integration with the header. */
+nav {
+  display: flex;
+  background-color: #070410;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.search {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* Centered on the page with a max-width of 900px. */
+/* .movie-container uses CSS Grid, which automatically adjusts to screen width, with grid-template-areas to control layout. */
+.movie-container {
+  /* The font-size: 1.5em ensures large, readable text. */
+  font-size: 1.5em;
+  /* Centered on the page with a max-width of 900px */
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-areas:
+  /* Each .cover-* class is given a grid area, which allows for a mix of larger (main banner) and smaller (movie items) blocks. */
+  "cover-1 cover-1"
+  "cover-2 cover-3"
+  "cover-4 cover-4"
+  "cover-5 cover-5"
+  "cover-6 cover-6";
+  gap: 15px;
+}
+
+.cover-1 {
+  grid-area: cover-1;
+}
+
+.cover-2 {
+  grid-area: cover-2;
+}
+
+.cover-3 {
+  grid-area: cover-3;
+}
+
+.cover-4 {
+  grid-area: cover-4;
+}
+
+
+.cover-5 {
+  grid-area: cover-5;
+}
+
+.cover-6 {
+  grid-area: cover-6;
+}
+/* The .main-banner and .movie-item elements have a dark background color, white text, and a shadow for depth. */
+.main-banner, .movie-item {
+  background-color: #070410;
+  color: #fff;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-banner {
+  width: 100%;
+}
+/* .main-banner img and .movie-item img have object-fit: cover to avoid image distortion. */
+.main-banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0px 18%;
+}
+
+.main-banner .description {
+  padding: 15px 0;
+}
+
+.movie-item {
+  background-color: #070410;
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+}
+
+.movie-item img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.movie-item .details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* .watch-now is styled to be clickable and visually appealing with padding, a dark background, and white text. */
+.watch-now {
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+/* Up to 1023px: Adjustments for medium-sized screens movie-container layout shifts to a more compact, two-column grid.
+.movie-item is adjusted to flow vertically for better readability. */
+@media screen and (max-width: 1023px) {
+  .multi-para{
+    column-count: 2;
+
+  }
+  .content{
+    max-width: 800px;
+  }
+  .movie-container {
+  grid-template-areas:
+  "cover-1 cover-2"
+  "cover-3 cover-4"
+  "cover-5 cover-6";
+  }
+  .movie-item {
+    display: flow;
+  }
+}
+
+/* Up to 719px Layout adapts to a single column, with all elements stacked vertically. This makes it more usable on small screens, like smartphones. */
+@media screen and (max-width: 719px) {
+  .movie-container {
+    grid-template-areas: 
+    "cover-1"
+    "cover-2"
+    "cover-3"
+    "cover-4"
+    "cover-5"
+    "cover-6";
+  }
+
+}
